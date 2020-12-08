@@ -69,7 +69,7 @@ public class MovementProvider : LocomotionProvider
     {
         // Apply the touch position to the head's forward Vector
         Vector3 direction = new Vector3(position.x, 0, position.y);
-        Vector3 headRotation = new Vector3(0, head.transform.eulerAngles.y, 0);
+        Vector3 headRotation = new Vector3(head.transform.eulerAngles.x, head.transform.eulerAngles.y, 0);
 
         // Rotate the input direction by the horizontal head rotation
         direction = Quaternion.Euler(headRotation) * direction;
