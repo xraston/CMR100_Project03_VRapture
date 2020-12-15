@@ -49,7 +49,7 @@ public class DrillMove : LocomotionProvider
         {
             moveScript.speed = boostSpeed; // adjust the movescript speed
 
-            drillBit.transform.transform.Rotate(0, 0, -Time.deltaTime * drillSpeed);
+            drillBit.transform.Rotate(0, 0, -Time.smoothDeltaTime * drillSpeed);
         }
     }
 }

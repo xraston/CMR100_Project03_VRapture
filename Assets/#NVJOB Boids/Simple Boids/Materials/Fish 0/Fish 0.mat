@@ -120,9 +120,9 @@ Material:
     - _SpecMapUVD: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SwimmingPower: 0.5
-    - _SwimmingScale: 1
-    - _SwimmingSpeed: 6
+    - _SwimmingPower: 0
+    - _SwimmingScale: 0.001
+    - _SwimmingSpeed: 0
     - _SwimmingX: 0.1
     - _SwimmingY: 0.1
     - _TailWagging: 5.6
@@ -135,10 +135,10 @@ Material:
     - _TreeWindPower: 1
     - _TreeWindYPosition: 30
     - _UVSec: 0
-    - _WaveBody: 0.3
-    - _WaveY: 0.5
-    - _WaveYSpeed: 0.5
-    - _Wobble: 1.5
+    - _WaveBody: 0
+    - _WaveY: 0
+    - _WaveYSpeed: 0
+    - _Wobble: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 0.5668887, b: 0, a: 1}

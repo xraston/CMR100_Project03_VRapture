@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 6890879666099194447}
   - component: {fileID: 1919798906014275262}
   - component: {fileID: 3227451571010395582}
-  - component: {fileID: 8656456184674755259}
   - component: {fileID: 3904665437945044165}
   - component: {fileID: 7287592323204386769}
   m_Layer: 0
-  m_Name: Fish 0 Pref 1
-  m_TagString: Untagged
+  m_Name: Fish 0 Pref 2
+  m_TagString: Clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3866908435750393346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: -0.275, z: 0.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &1919798906014275262
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8656456184674755259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3866908435750393346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9f5e144020c35a45a27be76c5544a4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fish1Prefab: {fileID: 3866908435750393346, guid: d7ce67cc6740d4c45be1d06f1bb51ee3,
-    type: 3}
 --- !u!54 &3904665437945044165
 Rigidbody:
   m_ObjectHideFlags: 0
