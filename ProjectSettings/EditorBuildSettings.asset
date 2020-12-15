@@ -8,5 +8,7 @@ EditorBuildSettings:
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4ea85d00dce2b2648ab5b9a51ba32308,
       type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: ffb5757f27ff7e14ba10f5285f099c54,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b5ee755a48e5e6b4b91fb7ad2c665726,
       type: 2}
