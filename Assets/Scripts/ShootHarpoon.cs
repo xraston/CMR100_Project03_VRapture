@@ -68,13 +68,11 @@ public class ShootHarpoon : MonoBehaviour
         else
         {
             transform.Translate(Vector3.back * speedIn * Time.deltaTime);
-
             spool.transform.Rotate(-Time.smoothDeltaTime * speedIn * spoolSpeed, 0, 0);
 
             if (transform.localPosition.z <= 0.1)
             {
                 transform.localPosition = new Vector3(0.018f, 0.038f, 0.1f);
-                // spool.transform.Rotate(0f, 0f, 0f, Space.Self);
                 spool.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
         }
@@ -88,10 +86,9 @@ public class ShootHarpoon : MonoBehaviour
 
             spool.transform.Rotate(Time.smoothDeltaTime * speedOut * spoolSpeed, 0, 0);
             
-            if (transform.localPosition.z >= 1)
+            if (transform.localPosition.z >= 3)
             {
-                transform.localPosition = new Vector3(0.018f, 0.038f, 1);
-                // spool.transform.Rotate(0f, 0f, 0f, Space.Self);
+                transform.localPosition = new Vector3(0.018f, 0.038f, 3);
                 spool.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
         }

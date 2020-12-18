@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Rendering.PostProcessing;
 
 public class DrillMove : LocomotionProvider
 {
@@ -16,6 +17,8 @@ public class DrillMove : LocomotionProvider
     public GameObject drillBit;
 
     public float drillSpeed = 1000;
+
+    public Camera XRCamera;
 
     private void Update()
     {
@@ -39,6 +42,7 @@ public class DrillMove : LocomotionProvider
         else
         {
             moveScript.speed = 5;
+            XRCamera.GetComponent<PostProcessVolume>().enabled = false; // turns on the grain effect
         }
             
     }
@@ -48,7 +52,7 @@ public class DrillMove : LocomotionProvider
         if (triggerValue == true)
         {
             moveScript.speed = boostSpeed; // adjust the movescript speed
-
+            XRCamera.GetComponent<PostProcessVolume>().enabled = true; // turns on the grain effect
             drillBit.transform.Rotate(0, 0, -Time.smoothDeltaTime * drillSpeed);
         }
     }
