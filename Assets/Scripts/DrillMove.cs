@@ -20,6 +20,8 @@ public class DrillMove : LocomotionProvider
 
     public Camera XRCamera;
 
+    public AudioSource drill;
+
     private void Update()
     {
         CheckForInput();
@@ -54,6 +56,8 @@ public class DrillMove : LocomotionProvider
             moveScript.speed = boostSpeed; // adjust the movescript speed
             XRCamera.GetComponent<PostProcessVolume>().enabled = true; // turns on the grain effect
             drillBit.transform.Rotate(0, 0, -Time.smoothDeltaTime * drillSpeed);
+            drill = GetComponent<AudioSource>();
+            drill.Play();
         }
     }
 }
